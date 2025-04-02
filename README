@@ -1,13 +1,45 @@
-cleanBigramme.py est un script python qui permet de transformer les valeurs données en pourcentage.
-Pour l'utiliser, il faut lancer le script avec en paramètre le fichier à traiter:
-        python3 cleanBigramme.py <fichier.txt>
+# 🔧 Optimisation d’un clavier – Algorithme génétique
 
-Attention: il est important d'exécuter la commande pour le fichier cleanBigramme avant le main !
+Ce projet utilise un **algorithme génétique** pour optimiser la disposition des lettres sur un clavier 4x10, en se basant sur la fréquence des bigrammes.
 
-main.py est le script principal qui permet de lancer l'optimisation du clavier.
-Pour l'utiliser, il faut lancer le script avec les paramètres suivant:
-        python3 main.py -t 100 -f 1
+---
 
-        -t : taille de la population
-        -f : fonction d'adaptation à utiliser (1 pour une main, 2 pour une autre)
-Par défaut, la taille de la population est de 260 et la fonction d'adaptation est la 1.
+## 📄 Fichiers principaux
+
+### `cleanBigramme.py`
+
+Ce script permet de transformer un fichier de fréquence de bigrammes en pourcentages utilisables.
+
+#### 💡 Utilisation
+
+```bash
+python3 cleanBigramme.py <fichier.txt>
+```
+
+> ⚠️ Ce script doit impérativement être exécuté **avant** de lancer le script principal `main.py`.
+
+---
+
+### `main.py`
+
+Script principal pour lancer l’optimisation du clavier.
+
+#### ⚙️ Paramètres
+
+```bash
+python3 main.py -t 100 -f 1
+```
+
+- `-t` : taille de la population (défaut : `260`)
+- `-f` : fonction d’adaptation à utiliser :
+- `1` : pour une **utilisation à une main**
+- `2` : pour une **utilisation à deux mains**
+
+---
+
+## 👥 Auteurs
+
+- Lucas Villaume
+- Emel Tatoglu  
+
+Projet réalisé dans le cadre d’un travail universitaire en **optimisation et métaheuristiques**.
