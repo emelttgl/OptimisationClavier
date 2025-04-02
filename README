@@ -1,0 +1,13 @@
+cleanBigramme.py est un script python qui permet de transformer les valeurs données en pourcentage.
+Pour l'utiliser, il faut lancer le script avec en paramètre le fichier à traiter:
+        python3 cleanBigramme.py <fichier.txt>
+
+Attention: il est important d'exécuter la commande pour le fichier cleanBigramme avant le main !
+
+main.py est le script principal qui permet de lancer l'optimisation du clavier.
+Pour l'utiliser, il faut lancer le script avec les paramètres suivant:
+        python3 main.py -t 100 -f 1
+
+        -t : taille de la population
+        -f : fonction d'adaptation à utiliser (1 pour une main, 2 pour une autre)
+Par défaut, la taille de la population est de 260 et la fonction d'adaptation est la 1.
